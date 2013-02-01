@@ -1,0 +1,188 @@
+JFDML JFormDesigner: "5.1.0.0.51" Java: "1.6.0_33" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+			"$columnSpecs": "default, labelcompgap, default, labelcompgap, default, labelcompgap, default, labelcompgap, default, labelcompgap, default, labelcompgap, default, labelcompgap, default"
+			"$rowSpecs": "default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default"
+		} ) {
+			name: "this"
+			add( new FormComponent( "com.jformdesigner.designer.wrapper.JGoodiesFormsSeparator" ) {
+				name: "separator1"
+				"text": "HeatMap"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridWidth": 7
+				"hAlign": sfield com.jgoodies.forms.layout.CellConstraints FILL
+				"gridX": 3
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "cbHeatMap"
+				"text": "Enabled"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridY": 3
+				"gridX": 3
+			} )
+			add( new FormComponent( "com.jformdesigner.designer.wrapper.JGoodiesFormsSeparator" ) {
+				name: "separator2"
+				"text": "TouchPad"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridY": 7
+				"gridWidth": 7
+				"gridX": 3
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "cbTouchPad"
+				"text": "Enabled"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridY": 9
+				"gridX": 3
+			} )
+			add( new FormComponent( "com.jformdesigner.designer.wrapper.HSpacer" ) {
+				name: "hSpacer1"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridHeight": 33
+			} )
+			add( new FormComponent( "com.jformdesigner.designer.wrapper.HSpacer" ) {
+				name: "hSpacer2"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 11
+				"gridHeight": 33
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "cbInterpolate"
+				"text": "Use Interpolation"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 7
+				"gridY": 3
+			} )
+			add( new FormComponent( "com.jformdesigner.designer.wrapper.VSpacer" ) {
+				name: "vSpacer1"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridY": 5
+				"gridWidth": 13
+				"gridHeight": 2
+				"gridX": 3
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "rbTPFull"
+				"text": "Full Screen"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 3
+				"gridY": 11
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "rbTPRel"
+				"text": "Relative"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 7
+				"gridY": 11
+			} )
+			add( new FormComponent( "com.jformdesigner.designer.wrapper.JGoodiesFormsLabel" ) {
+				name: "label1"
+				"textWithMnemonic": "Click Threshold:"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 3
+				"gridY": 13
+			} )
+			add( new FormComponent( "javax.swing.JSlider" ) {
+				name: "clickThreshold"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridY": 13
+				"gridWidth": 4
+				"gridX": 5
+				"hAlign": sfield com.jgoodies.forms.layout.CellConstraints FILL
+			} )
+			add( new FormComponent( "com.jformdesigner.designer.wrapper.VSpacer" ) {
+				name: "vSpacer2"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 3
+				"gridY": 14
+				"gridHeight": 5
+				"gridWidth": 13
+			} )
+			add( new FormComponent( "com.jformdesigner.designer.wrapper.VSpacer" ) {
+				name: "vSpacer3"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 3
+				"gridY": 17
+				"gridWidth": 13
+				"gridHeight": 2
+			} )
+			add( new FormComponent( "com.jformdesigner.designer.wrapper.JGoodiesFormsSeparator" ) {
+				name: "separator3"
+				"text": "Music Application"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridY": 19
+				"gridWidth": 7
+				"gridX": 3
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "cbMusic"
+				"text": "Enabled"
+				addEvent( new FormEvent( "javax.swing.event.ChangeListener", "stateChanged", "cbMusicStateChanged", true ) )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridY": 21
+				"gridX": 3
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "cbHeatColor"
+				"text": "Modify HeatMap Color"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 7
+				"gridY": 21
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "rbMDisc"
+				"text": "Discrete"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridY": 23
+				"gridX": 3
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "rbMCont"
+				"text": "Continuous"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 7
+				"gridY": 23
+			} )
+			add( new FormComponent( "com.jformdesigner.designer.wrapper.JGoodiesFormsLabel" ) {
+				name: "label3"
+				"textWithMnemonic": "Play Threshold:"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 3
+				"gridY": 25
+			} )
+			add( new FormComponent( "javax.swing.JSlider" ) {
+				name: "playThreshold"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 5
+				"gridY": 25
+				"gridWidth": 4
+			} )
+			add( new FormComponent( "com.jformdesigner.designer.wrapper.JGoodiesFormsLabel" ) {
+				name: "label2"
+				"textWithMnemonic": "Instrument:"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridY": 27
+				"gridX": 3
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox1"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 7
+				"gridY": 27
+			} )
+			add( new FormComponent( "com.jformdesigner.designer.wrapper.VSpacer" ) {
+				name: "vSpacer4"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 3
+				"gridY": 29
+				"gridWidth": 5
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 300, 455 )
+		} )
+	}
+}
