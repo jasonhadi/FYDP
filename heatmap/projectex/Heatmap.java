@@ -157,17 +157,17 @@ public class Heatmap implements GLEventListener {
                 y = j - 15;
               gl.glColor3d(1, 0, matrix[i - 1][j - 1]/100);
               gl.glColor3d(1, 0, 1);
-              gl.glVertex3d(x, y, matrix[i - 1][j - 1]/1);
+              gl.glVertex3d(x, y, matrix[i - 1][j - 1]/100);
               gl.glColor3d(1, 0, matrix[i - 1][j]/100);
-              gl.glVertex3d(x, y + 1, matrix[i - 1][j]/1);
+              gl.glVertex3d(x, y + 1, matrix[i - 1][j]/100);
               gl.glColor3d(1, 0, matrix[i][j - 1]/100);
-              gl.glVertex3d(x + 1, y, matrix[i][j - 1]/1);
+              gl.glVertex3d(x + 1, y, matrix[i][j - 1]/100);
               gl.glColor3d(1, 0, matrix[i][j - 1]/100);
-              gl.glVertex3d(x + 1, y, matrix[i][j - 1]/1);
+              gl.glVertex3d(x + 1, y, matrix[i][j - 1]/100);
               gl.glColor3d(1, 0, matrix[i - 1][j]/100);
-              gl.glVertex3d(x, y + 1, matrix[i - 1][j]/1);
+              gl.glVertex3d(x, y + 1, matrix[i - 1][j]/100);
               gl.glColor3d(1, 0, matrix[i][j]/100);
-              gl.glVertex3d(x + 1, y + 1, matrix[i][j]/10);
+              gl.glVertex3d(x + 1, y + 1, matrix[i][j]/100);
 
                // gl.glColor3d(1, 0, Math.sin(x*theta) + Math.cos(y*theta));
                // gl.glVertex3d(x, y, Math.sin(x*theta) + Math.cos(y*theta));
